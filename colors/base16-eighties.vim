@@ -50,6 +50,11 @@ if exists('base16colorspace') && base16colorspace == "256"
   let s:cterm06 = "21"
   let s:cterm09 = "16"
   let s:cterm0F = "17"
+  let s:cterm17 = "23"
+  let s:cterm18 = "24"
+  let s:cterm19 = "25"
+  let s:cterm1A = "26"
+  let s:cterm1B = "27"
 else
   let s:cterm01 = "10"
   let s:cterm02 = "11"
@@ -121,7 +126,7 @@ call <sid>hi("Error",         s:gui00, s:gui08, s:cterm00, s:cterm08, "", "")
 call <sid>hi("ErrorMsg",      s:gui08, s:gui00, s:cterm08, s:cterm00, "", "")
 call <sid>hi("Exception",     s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("FoldColumn",    s:gui0C, s:gui01, s:cterm0C, s:cterm01, "", "")
-call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
+call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm08, s:cterm17, "", "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none", "")
 call <sid>hi("Italic",        "", "", "", "", "none", "")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "", "")
@@ -145,14 +150,14 @@ call <sid>hi("LineNr",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none", "")
 call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
-call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none", "")
+call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm1B, s:cterm1B, "none", "")
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none", "")
-call <sid>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none", "")
+call <sid>hi("CursorLine",    "", s:gui01, "", s:cterm1B, "none", "")
 call <sid>hi("CursorLineNr",  s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
 call <sid>hi("QuickFixLine",  "", s:gui01, "", s:cterm01, "none", "")
-call <sid>hi("PMenu",         s:gui05, s:gui01, s:cterm05, s:cterm01, "none", "")
-call <sid>hi("PMenuSel",      s:gui01, s:gui05, s:cterm01, s:cterm05, "", "")
+call <sid>hi("PMenu",         s:gui05, s:gui01, s:cterm19, s:cterm17, "none", "")
+call <sid>hi("PMenuSel",      s:gui01, s:gui05, s:cterm01, s:cterm17, "", "")
 call <sid>hi("TabLine",       s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
 call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
 call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", "")
